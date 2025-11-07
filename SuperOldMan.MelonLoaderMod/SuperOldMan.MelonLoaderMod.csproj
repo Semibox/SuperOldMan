@@ -6,8 +6,8 @@
 		<RootNamespace>SuperOldMan.MelonLoaderMod</RootNamespace>
 		<LangVersion>default</LangVersion>
 		<IsPackable>false</IsPackable>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
-		<FileVersion>1.0.0</FileVersion>
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<FileVersion>1.0.1</FileVersion>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<AssemblyName>SuperOldMan.MelonLoaderMod</AssemblyName>
 		<LangVersion>latest</LangVersion>
@@ -336,6 +336,10 @@
 
 	</ItemGroup>
 
+	<Target Name="CheckEnvironmentVariable" BeforeTargets="PreBuildEvent">
+		<Message Text="MEGABONK_DIR = $(MEGABONK_DIR)" Importance="high" />
+		<Warning Text="MEGABONK_DIR is not set!" Condition="'$(MEGABONK_DIR)' == ''" />
+	</Target>
 	<PropertyGroup>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>

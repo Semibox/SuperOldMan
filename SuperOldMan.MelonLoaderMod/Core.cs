@@ -8,7 +8,7 @@ using Il2CppAssets.Scripts.Menu.Shop;
 using MelonLoader;
 using SuperOldMan.MelonLoaderMod;
 
-[assembly: MelonInfo(typeof(Core), "SuperOldMan", "1.0.0", "Slimaeus", null)]
+[assembly: MelonInfo(typeof(Core), "SuperOldMan", "1.0.1", "Slimaeus", null)]
 [assembly: MelonGame("Ved", "Megabonk")]
 
 namespace SuperOldMan.MelonLoaderMod
